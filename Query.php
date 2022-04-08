@@ -10,7 +10,7 @@ class Query extends AbstractController
 {
     public function number(): Response
     {
-        $server_name = "PyrosLife";
+        $server_name = "ArmaServer"; // Your server name
 
         $servername = "127.0.0.1";
         $username = "*****"; // Your username in mysql

@@ -13,9 +13,9 @@ class Query extends AbstractController
         $server_name = "PyrosLife";
 
         $servername = "127.0.0.1";
-        $username = "rl242";
-        $password = "31#Nigi2";
-        $dbname = "ArmaPanel";
+        $username = "*****"; // Your username in mysql
+        $password = "*****"; // Your password in mysql
+        $dbname = "*****"; // The name of your database in mysql
         
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -24,15 +24,15 @@ class Query extends AbstractController
           die("Connection failed: " . $conn->connect_error);
         }
         
-        $sql = "SELECT * FROM ArmaPanel.ArmaData LIMIT 0,1;";
+        $sql = "SELECT * FROM ****"; // Your request
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
-            $name = $row['name'];
-            $gang = $row['gang'];
-            $bank = $row['bank'];
-            $weapon = $row['weapon'];
+            $name = $row['name']; // Name of column assigned to a variable
+            $gang = $row['gang']; // Name of the column
+            $bank = $row['bank']; // Name of the column
+            $weapon = $row['weapon']; // Name of the column
           }
         } else {
           $name = $row['null'];
@@ -41,7 +41,7 @@ class Query extends AbstractController
           $weapon = $row['null'];
         }
 
-        $sql = "SELECT * FROM ArmaPanel.ArmaData LIMIT 1,1;";
+        $sql = "SELECT * FROM ****";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {
@@ -58,7 +58,7 @@ class Query extends AbstractController
           $weapon2 = $row['null'];
         }
 
-        $sql = "SELECT * FROM ArmaPanel.ArmaData LIMIT 7,1;";
+        $sql = "SELECT * FROM ****";
         $result = $conn->query($sql);
         
         if ($result->num_rows > 0) {

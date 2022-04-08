@@ -23,7 +23,7 @@ Project to keep an eye on each of your players in your database.
 
     symfony server:start
     
-Then type "localhost:8000/Query" in the research bar and there's the site up and running only for you! The site might look since i didn't had the time to make it responsive.
+Then type "localhost:8000/Query" in the research bar and there's the site up and running only for you! The site might look bad since i didn't had the time to make it responsive.
 
 [php]: https://www.php.net/downloads
 [mysql]: https://phoenixnap.com/kb/install-mysql-ubuntu-20-04

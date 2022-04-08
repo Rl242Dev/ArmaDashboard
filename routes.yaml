@@ -1,0 +1,11 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+app_dashbord:
+    path: /DashBoard
+    controller : App\Controller\DashBoard::number
+
+app_query:
+    path: /Query
+    controller : App\Controller\Query::number

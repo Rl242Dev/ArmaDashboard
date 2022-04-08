@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block stylesheets %}
+            <link href="{{ asset('css/blog.css') }}" rel="stylesheet"/> 
+        {% endblock %}
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="fix-container-top">
+            <span class="server-name">{{ server_name }}</span>
+            <span class="dashboard-span">Dashboard</span>
+        </div>
+        <div class="table-style">
+        <table class="GeneratedTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Gang</th>
+              <th>Banque</th>
+              <th>Arme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ name1 }}</td>
+              <td>{{ gang1 }}</td>
+              <td>{{ bank1 }} Millions</td>
+              <td>{{ weapon1 }}mm</td>
+            </tr>
+            <tr>
+              <td>{{ name2 }}</td>
+              <td>{{ gang2 }}</td>
+              <td>{{ bank2 }} Millions</td>
+              <td>{{ weapon2 }}mm</td>
+            </tr>
+            <tr>
+              <td>{{ name3 }}</td>
+              <td>{{ gang3 }}</td>
+              <td>{{ bank3 }} Millions</td>
+              <td>{{ weapon3 }}mm</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+    </body>
+</html>

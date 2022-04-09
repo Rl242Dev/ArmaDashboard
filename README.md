@@ -14,8 +14,9 @@ Using Symfony create a WebApp :
     
 1. Go in ./src/Controller, and create a file named Query.php then copy and paste the content of the [query] of this Repo.
 2. Go in ./templates, and copy and paste into base.html.twig the content of the [html.twig] of this Repo.
-3. Go in ./public, and create a folder named "css" then create a file named "blog.css" and copy and paste into it the content of [blog.css] of this Repo.
-4. Go in ./config, and copy and paste into routes.yaml the content of the [routes] of this Repo.
+3. Then go into your WSL and copy and paste this command "composer require symfony/asset".
+4. Go in ./public, and create a folder named "css" then create a file named "blog.css" and copy and paste into it the content of [blog.css] of this Repo.
+5. Go in ./config, and copy and paste into routes.yaml the content of the [routes] of this Repo.
     
 # 🔧 Usage :
 
